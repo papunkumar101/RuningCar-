@@ -1,216 +1,122 @@
-*{
-    margin: 0px;
-    padding:0px;
-   
+body{
+    font-size: 15pt;
+   /* padding: 3%;
+    margin :3%;*/
+    font-family: sans-serif;
+    /*background-image:url("bg1.jpg");*/
+    color: white;
+    background-size: cover;
+    background-image: url("bg1.jpg"), linear-gradient(#eb01a5, #d13531);
 }
-
-/*_________NAVIGATION BAR PART______*/ 
-
-
-.navBar{
-  background-color:#3C373B;
-  color: white;
-  padding:20px;
-  
-}
-.navBar img{
-  height:55px;
-  float:left;
-  margin-left:2px 2px;
-  border-radius:25px;
-  box-shadow: 2px 2px #4F4949;
-  
-}
-.navMenu{
- text-align: right;
-  
-}
-
-ul li{
-  display:inline-block;
-  list-style:none;
-  margin:20px;
-}
-ul li a{
-   text-decoration:none;
-   color:white;
-}
-span{
-  color: #E8E9F1;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  margin: 0 20px;
-}
-@media only screen and (max-width:700px){
-  span{
-  display:block;
-}
-ul li{
-  display: block;
-}
-ul{
-  display:none;
-}
-}
-
-
-/*__________BODY PART___________*/ 
-
-.body{
-  background-color:#E7E7E7C9;
-  margin: 0px;
-  padding: 5px;
- font-family: 'Bebas Neue', cursive;
-}
-#midImage{
-  position:relative;
-  
-}
-#midImage img{
-  margin: 0;
- padding:5px 0px;
- height:100%;
- width: 100%;
-}
-h2{
-  text-shadow: 2px 2px #CF65558C;
-  font-family: 'Oswald', sans-serif;
-}
-#containt{
-  height:70%;
-  width: 90%;
-  padding: 5px;
-  color: #BCBED6;
-  background-color:#FFFFFF38;
-  position: absolute;
-  width: 80%;
-  top:15%;
-  left:10%;
- border-radius:25px;
- font-family: 'Dancing Script', cursive;
-}
-
-#containt h2{
-  padding-top:28%;
-  padding-left:15%;
-  text-shadow:2px 2px #5E52D4;
-  font-family: 'Dancing Script', cursive;
-}
-#containt h4 {
-  padding: 5% 30%;
-  color: #D35E36;
-  text-shadow: 2px 2px #CFD189;
-} 
-
-
-/*_________Listes___________*/  
-
-#skillsworkOn {
- /* background-color: green;*/
- height:200px;
- width:100%;
- position: relative;
-}
-#skills{
-  padding-top: 20px;
-  position: absolute;
-  float:left;
- /* background-color: yellow;*/
-  height: 200px;
-  width: 50%;
-  text-align: center;
-}
-#skills ol li{
+div.form a{
   text-decoration: none;
-  list-style-type: none;
-}
-#workOn{
- padding-top:20px;
- float:right;
-/* background-color: red;*/
- height:200px;
- width: 50%;
- text-align: center;
-}
-#workOn ol li {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-
-/*________about me_______*/
-
- #aboutMe{
-   margin:0;
-   padding:0;
-  position:relative;
-  height: 300px;
-  max-width: 100%;
-  background:url(bgImage.jpg);
-  border-radius:10px;
-  font-family: 'Dancing Script', cursive;
-}
-#image img{
+  color: #CDD235;
+  font-family: "Times New Roman",
+  Times,
+  serif;
+  float:right;
+  }
+.firstButton{
+  font-size: 25px;
+  background-color:#2ED846;
+  border: 3px solid #AE1A1A;
+  border-radius:15px;
+  color: black;
   float: left;
-  height:150px;
-  width: 150px;
+}
+.secondButton{
+  font-size: 25px;
+  background-color:#222FBE;
+  border: 3px solid #F3EDEBA6;
+  border-radius:15px;
+  color:black;
+  float:right;
+}
+/*__________home page_______*/ 
+
+ h1,h3{
+  padding-top: 20%;
+  text-align:center;
+  text-shadow:3px 3px #B2B7ED80;
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  
+}
+div .heading h3{
+  padding-top: 0px;
+  text-align: center;
+  
+}
+div #homePart #about{
+  position: relative;
+  overflow: none;
+}
+div#homePart #about img{
+  float:left;
+  height: 250px;
+  width: 250px;
   border-radius:50%;
   shape-outside:circle();
-  margin: 30px 20px 20px 3px;
-  font-family:'Oswald', sans-serif;
+  margin:20px 20px 20px 3px;
 }
-div #text p{
-  margin:0;
-  padding:0;
-  text-align: justify;
-  line-height:22px;
-
+div#homePart #about p{
+  font-size: 15px;
+ text-align: justify;
+ line-height:30px;
+ letter-spacing:2px;
 }
-div#aboutMe #text h3{
+div#navBar table tr th{
   text-align: center;
-  color: #FFFFFF;
-  /*padding: 3px 3px;*/
-  font-family: 'Oswald', sans-serif;
+}
+div#homePart #about #abtimage img {
+  float: right;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  shape-outside:circle();
+  margin: 30px 0px 20px 20px;
+}
+div.work ul li a{
+  text-decoration: none;
+  line-height: 40px;
+  color:#6F79DF;
+  letter-spacing:3px; 
 }
 
-/*__________ICONS PART_______*/
+/*_________footer___________*/
 
-#ICONS{
+
+div#footer{
+  border:3px solid red;
   text-align: center;
-  background-color:#3C373B;
+  border-radius:25px;
 }
-.fa{
-  margin:5%;
+.fa {
+  margin: 5%;
   padding: 5px;
   font-size: 25%;
   text-align: center;
-  text-decoration:none;
-  border-radius:50%;
+  text-decoration: none;
+  border-radius: 50%;
 }
-.fa-facebook{
+
+.fa-facebook {
   background-color: #2F3DDA;
-  color:#B2B4CD;
+  color: #B2B4CD;
 }
-.fa-twitter{
+
+.fa-twitter {
   background-color: #3DA1B8;
   color: white;
 }
-.fa-linkedin{
- background-color: #47B752;
- color: white;
-}
-.fa-instagram{
-  background-color:#562851;
+
+.fa-linkedin {
+  background-color: #47B752;
   color: white;
 }
 
-/*_________FOOTER PART__________*/ 
-
-footer {
-  background-color: #1B1B1C;
+.fa-instagram {
+  background-color: #562851;
   color: white;
-  text-align: center;
 }
-
-
