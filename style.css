@@ -1,122 +1,90 @@
 body{
-    font-size: 15pt;
-   /* padding: 3%;
-    margin :3%;*/
-    font-family: sans-serif;
-    /*background-image:url("bg1.jpg");*/
-    color: white;
+  margin:0;
+  padding:0;
+  /*overflow: hidden;*/
+}
+.container{
+  height:100%;
+  width:100%;
+}
+ .sky img{
+  position: absolute;
+  height: 630px;
+  width: 360px;
+}
+.trees img{
+  overflow: hidden;
+  
+  position: absolute;
+  top:-130px;
+  animation:downup 3s linear  infinite;
+}
+.track img{
+  height:222px;
+  background-repeat: repeat;
+  position: absolute;
+  top:410px;
+  width:100%;
+  /*animation: trackmove 4s linear infinite;
+  animation: carrun 4s linear infinite;*/
+  animation:downup 3s linear infinite;
+}
+.car {
+    height: 100px;
+    width:310px;
+    background-image: url(car_body.png);
     background-size: cover;
-    background-image: url("bg1.jpg"), linear-gradient(#eb01a5, #d13531);
+    background-repeat: no-repeat;
+    position: absolute;
+    left:5px;
+    bottom:30vh;
+    transition: 4s;
+    animation: updown 2s linear infinite;
+ /*  animation:updown 4s  infinite;*/
 }
-div.form a{
-  text-decoration: none;
-  color: #CDD235;
-  font-family: "Times New Roman",
-  Times,
-  serif;
-  float:right;
-  }
-.firstButton{
-  font-size: 25px;
-  background-color:#2ED846;
-  border: 3px solid #AE1A1A;
-  border-radius:15px;
-  color: black;
-  float: left;
-}
-.secondButton{
-  font-size: 25px;
-  background-color:#222FBE;
-  border: 3px solid #F3EDEBA6;
-  border-radius:15px;
-  color:black;
-  float:right;
-}
-/*__________home page_______*/ 
-
- h1,h3{
-  padding-top: 20%;
-  text-align:center;
-  text-shadow:3px 3px #B2B7ED80;
-  font-weight: bold;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  
-}
-div .heading h3{
-  padding-top: 0px;
-  text-align: center;
-  
-}
-div #homePart #about{
+.wheel1 img{
   position: relative;
-  overflow: none;
+  height: 66px;
+  width: 66px;
+  left:42px;
+  bottom:-6vh;
+  animation: wheelrotate  5s linear infinite;
 }
-div#homePart #about img{
-  float:left;
-  height: 250px;
-  width: 250px;
-  border-radius:50%;
-  shape-outside:circle();
-  margin:20px 20px 20px 3px;
-}
-div#homePart #about p{
-  font-size: 15px;
- text-align: justify;
- line-height:30px;
- letter-spacing:2px;
-}
-div#navBar table tr th{
-  text-align: center;
-}
-div#homePart #about #abtimage img {
-  float: right;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  shape-outside:circle();
-  margin: 30px 0px 20px 20px;
-}
-div.work ul li a{
-  text-decoration: none;
-  line-height: 40px;
-  color:#6F79DF;
-  letter-spacing:3px; 
+.wheel2 img{
+  position: relative;
+  height: 66px;
+  width: 66px;
+  left:221px;
+  bottom:5vh;
+  animation: wheelrotate 5s linear infinite;
 }
 
-/*_________footer___________*/
-
-
-div#footer{
-  border:3px solid red;
-  text-align: center;
-  border-radius:25px;
+@keyframes wheelrotate
+{
+  100%{ transform: rotate(360deg);}
 }
-.fa {
-  margin: 5%;
-  padding: 5px;
-  font-size: 25%;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+@keyframes carrun
+{
+  100%{transform: translateX(100vw);}
 }
-
-.fa-facebook {
-  background-color: #2F3DDA;
-  color: #B2B4CD;
+/*@keyframes trackmove{
+  100%{transform: translatex(-100vw);}
+}*/
+@keyframes updown{
+  0%{transform: translateY(5px);}
+  50%{transform:translateY(-5px);}
+  100%{transform: translateY(5px);}
 }
+@keyframes downup {
+  0% {
+    transform: translateX( 5px);
+  }
 
-.fa-twitter {
-  background-color: #3DA1B8;
-  color: white;
-}
+  50% {
+    transform: translateX(-5px);
+  }
 
-.fa-linkedin {
-  background-color: #47B752;
-  color: white;
-}
-
-.fa-instagram {
-  background-color: #562851;
-  color: white;
+  100% {
+    transform: translateX(5px);
+  }
 }
